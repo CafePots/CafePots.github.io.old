@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'console';
+    src: url('/StyleStuff/');
+    src: url('../web_fonts/clacon2-webfont.woff2') format('woff2'),
+         url('../web_fonts/clacon2-webfont.woff') format('woff'),
+         url('../web_fonts/clacon2.ttf') format('truetype'),
+         url('../web_fonts/whitrabt-webfont.eot') format('embedded-opentype'),
+         url('../web_fonts/whitrabt-webfont.woff') format('woff'),
+         url('../web_fonts/whitrabt-webfont.ttf') format('truetype'),
+         url('../web_fonts/whitrabt-webfont.svg') format('svg'),
+         local('monospace'),
+         local('sans-serif');
+    font-weight: normal;
+    font-style: normal;
+
+}

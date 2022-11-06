@@ -1,0 +1,154 @@
+:root {
+    --bg-color: black;
+}
+
+body {
+    color: green;
+    background-color:var(--bg-color);
+    font-family: monospace,sans-serif;
+}
+a{
+    color:blue;
+}
+a:hover{
+    color:purple;
+}
+.exit{
+    color:whitesmoke;
+    padding: left 10px,
+            right 10px,
+            top 5px,
+            bottom 5px;
+    margin-left:10px;
+    border-radius: 2px;
+    border-color: white;
+    border: 5px;
+    background-color:red;
+    background-image: linear-gradient(to bottom right,#e3a589,#eb4f25);
+
+}
+
+h1 {
+    font-family: 'console',monospace;
+    position: relative;
+    /*
+    outline: 2px solid red;
+    */
+    width:max-content;
+    height:33px ;
+    padding-bottom: 5px;
+}
+
+p {
+    margin-top:0em;
+    margin-bottom: 0em;
+    padding: 2px;
+}
+
+h1::before,
+h1::after {
+    content: '';
+    position: absolute;
+    top:0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+}
+
+h1::before{
+    background-color:  var(--bg-color);
+    animation: typeing 1.5s steps(18) 1s forwards;
+}
+
+h1::after{
+    width: 0.75em;
+    background: green;
+    animation: 
+    typeing 1.5s steps(18) 1s forwards,
+    blink 750ms steps(18) infinite;
+}
+
+@keyframes typeing {
+    to {
+        left:100%;
+    }
+}
+
+@keyframes blink {
+    to{
+        background: transparent;
+    }
+}
+
+.Tab {
+    font-family: sans-serif;
+    border-radius: 2px;
+    position: absolute;
+    z-index: 1;
+    background-color: #0a57d4;
+    border: 1px solid #085ada;
+    text-align: left;
+    background-image:linear-gradient(to bottom right,#409cfb,#1221af)
+}
+    
+.TabHeader{
+    font-family: 'console',sans-serif;
+    margin: 1px;
+    padding: auto;
+    cursor: move;
+    z-index: 10;
+    background-color: rgb(14, 33, 204);
+    background-image: linear-gradient(#409cfb,#1c2cb9,#256fb9);
+    color:whitesmoke;
+}
+.TabBody{
+    font-family: Tahoma, Verdana, Segoe, sans-serif;
+    font-size: 13px;
+    margin: 0px;
+    padding: auto;
+    z-index: 10;
+    background-color: lightgrey;
+    color:black;
+    overflow-y: auto;
+    line-height: 2;
+}
+.fadeIn{
+    -webkit-animation: 3.5s ease 0s normal forwards 1 fadein;
+    animation: 3s ease 0s normal forwards 1 fadein;
+}
+
+@keyframes fadein{
+    0% { opacity:0; }
+    66% { opacity:0; }
+    100% { opacity:1; }
+}
+
+@-webkit-keyframes fadein{
+    0% { opacity:0; }
+    66% { opacity:0; }
+    100% { opacity:1; }
+}
+
+@keyframes fadeout{
+    100% { opacity:0; }
+    66% { opacity:0; }
+    0% { opacity:1; }
+}
+
+@-webkit-keyframes fadeout{
+    100% { opacity:0; }
+    66% { opacity:0; }
+    0% { opacity:1; }
+}
+.fadeOut{
+    -webkit-animation: 3.5s ease 0s normal forwards 1 fadeout;
+    position: absolute;
+    animation: 3s ease 0s normal forwards 1 fadeout;
+}
+.faded{
+    visibility:hidden;
+    opacity: 0%;
+}
+.front{
+    z-index: 100;
+}

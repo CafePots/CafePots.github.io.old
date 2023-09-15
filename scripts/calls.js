@@ -1,10 +1,2 @@
 dragElement(document.getElementById("legend"));
-dragElement(document.getElementById("Cite"));
-dragElement(document.getElementById("Welcome"));
 dragElement(document.getElementById("speen"));
-dragElement(document.getElementById("kali"));
-dragElement(document.getElementById("terms"));
-dragElement(document.getElementById("hard"));
-dragElement(document.getElementById("pass"));
-dragElement(document.getElementById("wifi"));
-dragElement(document.getElementById("crypt"));

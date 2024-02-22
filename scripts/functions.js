@@ -61,3 +61,7 @@ function inFront(elment){
     document.getElementById(elment).classList.add("fadeIn");
     document.getElementById(elment).classList.add('front');
 }
+function updateDiv()
+{ 
+    document.getElementById("HamTools").innerHTML = document.getElementById("HamTools").innerHTML ;
+} 

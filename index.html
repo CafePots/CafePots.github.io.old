@@ -92,17 +92,18 @@
             </div>
             </ul>
     </div>
-    <div id="HamTools" onclick="inFront('HamTools')" class="faded" style="top: 37px; left: 1133px;"> 
+    
+    <div id="HamTools" onclick="inFront('HamTools');updateDiv()" class="faded" style="top: 37px; left: 1133px; width: fit-content;height: auto;"> 
         <div id="HamToolsHeader" class="TabHeader"><p style ="display:inline;padding-right:20vh;">Ham Tools</p>
             <ul style="display: inline; padding-left:0px;">
             <li style = "display: inline;"><!--image for tab header--></li>
             <li alt="Exit"style="display:inline; float:right;">
-                <button title="this closes this tab" class="exit" onclick="fadeOut('HamTools')");>X</button>
+                <button title="this closes this tab" class="exit" onclick="fadeOut('HamTools')";>X</button>
                 <!--exit image-->
             </li>
         </ul>
         <br>
-        </div>
+    </div>
             <div class="TabBody"onclick="inFront('HamTools')">
                 <!--Content Goes here-->
                 <center>
@@ -111,12 +112,13 @@
                 <center>
                     <a href="https://www.hamqsl.com/solar.html" title="Click to add Solar-Terrestrial Data to your website!"><img src="https://www.hamqsl.com/solarmuf.php"></a>
                 </center>
-                <center><iframe src="https://hamradioprep.com/wp-content/uploads/2024/01/HamRadioPrep-Amateur-Radio-Band-Plan.pdf" 
-                style="width:600px; height:500px;" frameborder="0"></iframe></center>
-                <br>
+                <center>
+                <iframe style="width: 150%;height: auto;" src="https://hamradioprep.com/wp-content/uploads/2024/01/HamRadioPrep-Amateur-Radio-Band-Plan.pdf" frameborder="0"></iframe>
+                </center>
             </div>
             </ul>
     </div>
 </body>
 <script src="scripts/calls.js"></script>
 </html>
+                
